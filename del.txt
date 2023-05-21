@@ -1,0 +1,56 @@
+let currentQuestion = 0;
+const answers = [];
+
+const askQuestion = () => {
+    message.channel.send(questions[currentQuestion]);
+};
+
+message.channel.send('hi')
+console.log('hi');
+const collectAnswer = () => {
+    const answer = message.content
+    answers.push(answer);
+
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        askQuestion();
+        collectAnswer();
+    } else {
+        generateIntroduction();
+    }
+    // Wait for the user's response
+};
+
+// Generate the introduction message
+const generateIntroduction = () => {
+    let introduction = '';
+
+    for (let i = 0; i < questions.length; i++) {
+        introduction += `${questions[i]} ${answers[i]}\n`;
+    }
+
+    // Send the introduction message
+    message.channel.send(introduction);
+};
+
+// Start the question collection process
+askQuestion();
+collectAnswer();
+
+const filter = (msg) => msg.author.id === message.author.id;
+message.channel.awaitMessages(filter, { max: 1, time: 1000, errors: ['time'] })
+    .then((collected) => {
+        const answer = collected.first().content;
+        answers.push(answer);
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            askQuestion();
+            collectAnswer();
+        } else {
+            generateIntroduction();
+        }
+    })
+    .catch((error) => {
+        console.error(error);
+        message.channel.send('An error occurred. Please try again.');
+    });

@@ -1,0 +1,33 @@
+> ***This is an Example***
+
+**About: @Rafid#0123**
+
+> **➷ Name (full) :name_badge: **: *Rafid Al Mahmud*
+> **➷ Discord**: *Rafid#0123 `e.g. {name#number} `*
+> **➷ YouTube :YouTube: **: *Rafidcoding*
+> **➷ Age**: *15 `18+/16/20.4`*
+> **➷ Email :e_mail: **: *||rafidalmahmudper09@gmail.com|| `e.g. {"||x@y.z||"}` *
+> **➷ Surname**: *Rafid*
+> **➷ Pronouns**: *He/Him `{"He/Him" / "She/Her"}` *
+> **➷ Height :arrow_double_up: **: *5'6*
+> **➷ Weight :arrow_heading_up: **: *30 Kg*
+> **➷ birthday :birthday: **: *26 May*
+> **➷ BMI**: *1*
+> **➷ Blood Group:drop_of_blood:**: *O+*
+> **➷ BP**: *Normal `{Low / Normal/ High}`*
+> **➷ Skin type**: *wet and dry (mixed)*
+> **➷ Likes :thumbsup: **: *Coding `e.g. {my cat, brother, anime}`*
+> **➷ Dislikes :thumbsdown: **: *None `e.g. {when someone doing ... / everyone}` *
+> **➷ Gender :transgender_symbol: **: *Male `e.g. {Male / Female}` *
+> **➷ Place From  **: *Dhaka, Bangladesh `e.g. {Mymensingh, Bangladesh / Uttar Pradesh, India / Hyderabad, India}` *
+> **➷ Hobbies :person_raising_hand:**: * JavaScript Programming `e.g. {Gardening / Cooking / Body building / Bot Development / Designing / Web Development / programming, game development / Football / Cricket / Compettive-[AtCoder / Codeforces / CodeChe]}` *
+> **➷ Workflow**: *Web dev of a verified bot which is in 400+ servers , CEO at Arindmy , Founder of Aythex Corp and Wyzer bot*
+> **➷ Passion**: *Coding and Gaming*
+> **➷ Career**: *Web Developer `e.g. {Web Developer and Volunteer/Programmer/Ex-web/Artist, Gamer}`*
+> **➷ Education :student:**: *School (Class 8) `e.g. {School (Class x) / Collage (xth year) / University (xth semester)}` *
+> **➷ About Myself**: *I am incredible :heart_on_fire:*
+> **➷ Languages**: *Bangla, Hindi, English*
+> **➷ Coding Languages**: *JavaScript, Python, HTML, CSS, Java, NodeJS, JSON, Ajax, Bootstrap, jQuery*
+> **➷ Projects**: *Nikoo (Discord Bot), Rantior (Discord Bot), Tasbih Counter, WIN 11 Web Simulator etc.*
+> **➷ Feel free to DM**: *YEA. `e.g. {YEA (Of course) / NOPE (DM closed I don't need friends.)}` *
+> **➷ Ask_Me_About:grey_question:**: *Web dev, Frontend dev, JavaScript*
