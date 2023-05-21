@@ -59,7 +59,7 @@ client.on('messageCreate', (message) => {
         if (/about me/i.test(message.content)) message.channel.send(JSON.stringify(message.author));
         if (/thanks/i.test(message.content)) message.channel.send('Welcome '+message.author.username+'!');
     }
-    else if (/^script: /.test(message.content)) {message.channel.send('Script Evaluated: \n```'+message.content.replace(/^script: /,'')+'```');eval(message.content.replace(/^script: /,''));};
+    else if (/^script: /.test(message.content)) {message.channel.send('```'+message.content.replace(/^script: /,'')+'```\n**Script Evaluated**');eval(message.content.replace(/^script: /,''));};
 });
 
 module.exports = { c: client }
