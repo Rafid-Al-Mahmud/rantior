@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const INTRODUCTION_COMMAND = '/information';
 
 // Bot token here
-const TOKEN = 'MTEwOTUwODc2ODY0NDk5NzIwMg.GMBI5n.3tO2UQ-yzmznDGKE53aB-Uu_8qtWt7OiEdPb04';
+const TOKEN = '';
 
 // Channel ID where the introductions will be posted
 // const INTRODUCTION_CHANNEL_ID = 1109459105606795354;
