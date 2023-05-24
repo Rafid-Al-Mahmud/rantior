@@ -1,4 +1,3 @@
-
 const Discord = require("discord.js");
 
 // Bot command to trigger the introduction process
