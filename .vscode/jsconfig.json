@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "checkJs": true
+    },
+    "include": [
+      "**/*"
+    ],
+    "exclude": ["node_modules","**/*.ajax.js"],
+    "typeAcquisition": {
+      "enable": true
+    }
+  }

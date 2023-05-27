@@ -1,0 +1,5 @@
+{
+    "javascript.suggest.completeJSDocs": true,
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+}
