@@ -3,8 +3,10 @@ const Discord = require("discord.js");
 // Bot command to trigger the introduction process
 const INTRODUCTION_COMMAND = '/information';
 
+require('dotenv').config();
+
 // Bot token here
-const TOKEN = 'MTEwOTUwODc2ODY0NDk5NzIwMg.G4U9y2.vkIHCO1zNHMr-6sSbsYhKr1KBgGabet_lIHpQQ';
+const TOKEN = process.env.TOKEN;
 
 // Channel ID where the introductions will be posted
 // const INTRODUCTION_CHANNEL_ID = 1109459105606795354;
