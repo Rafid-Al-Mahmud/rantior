@@ -1,39 +1,4 @@
-const { Discord, client } = require('.');
-const https = require('https');
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}`);
-    const channel = client.channels.cache.get('1109592240566829127');
-    if (channel) {
-        //embed.addField('Field 2', 'Value 2');
-        const embed = new Discord.EmbedBuilder()
-            .setColor(0x0099FF).setTitle('Some title')
-            .setURL('https://discord.js.org/')
-            .setAuthor({ name: 'Rantior', iconURL: 'rantior.jpeg', url: 'https://discord.js.org' })
-            .setDescription('Some description here')
-            // .setThumbnail('https://i.imgur.com/AfFp7pu.png')
-            .setThumbnail('rantior.jpeg')
-            .addFields(
-                { name: 'Regular field title', value: 'Some value here' },
-                { name: '\u200B', value: '\u200B' },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
-            )
-            .addFields({ name: 'Inline field title', value: 'Some value here', inline: true })
-            .setImage('https://i.imgur.com/AfFp7pu.png')
-            .setTimestamp()
-            .setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
-
-
-        //channel.send({ embeds: [embed] });
-        console.log('Message sent!');
-        //channel.send('Server Started');
-    } else {
-        console.log('Channel not found.');
-    }
-
-});
-client.on('messageCreate', (message) => {
-    // messageCreate
+const handle_messageCreate = (message) => {// messageCreate
     // if(x.author.bot===false) x.channel.send("@"+x.author.username+"#"+x.author.discriminator)
     require('fs').writeFile('message.json', JSON.stringify(message), err => {
         if (err) throw err;
@@ -90,12 +55,16 @@ client.on('messageCreate', (message) => {
             message.channel.send('Welcome ' + message.author.username + '!');
             console.log('BOT(Rantior): ' + 'Welcome ' + message.author.username + '!');
         }
+        if (/bye bye/i.test(message.content)) {
+            message.channel.send(':cry: Ok ' + message.author.username + '!');
+            console.log('BOT(Rantior): ' + ':cry: Ok ' + message.author.username + '!');
+            // client.destroy();
+            process.exit(0);
+        }
     }
     else if (/^script: /.test(message.clearContent)) {
         message.channel.send('```' + message.content.replace(/^script: /, '') + '```\n**Script Evaluated**');
         console.log('BOT(Rantior): ' + '```' + message.content.replace(/^script: /, '') + '```\n**Script Evaluated**'); eval(message.content.replace(/^script: /, ''));
     };
-});
-
-https.createServer((req,res)=>{res.end('hi')}).listen(3000);
-module.exports = { c: client }
+}
+module.exports = handle_messageCreate;

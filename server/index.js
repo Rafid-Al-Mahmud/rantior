@@ -1,0 +1,1 @@
+require('./App/clientEvents').c.login(TOKEN);

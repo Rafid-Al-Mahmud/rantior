@@ -66,7 +66,7 @@ function ajax(url, async, username, password) {
      * Create an (new) XMLHttpRequest object
      * The XMLHttpRequest object is used to request data from a server.
      */
-    const xhr = new XMLHttpRequest();
+    const xhr = new ((typeof require === 'function')?require('./xhr').XMLHttpRequest:XMLHttpRequest);
 
     /**
      * 
@@ -219,3 +219,4 @@ function ajax(url, async, username, password) {
     return obj;
     console.log(this.get);
 }
+if(typeof module==='object') module.exports = ajax;
