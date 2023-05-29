@@ -1,4 +1,5 @@
-const { Discord, client, INTRODUCTION_CHANNEL_ID, INTRODUCTION_COMMAND, questions } = require('.');
+const { Discord, client } = require('.');
+const https = require('https');
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
     const channel = client.channels.cache.get('1109592240566829127');
@@ -7,9 +8,10 @@ client.on('ready', () => {
         const embed = new Discord.EmbedBuilder()
             .setColor(0x0099FF).setTitle('Some title')
             .setURL('https://discord.js.org/')
-            .setAuthor({ name: 'Some name', iconURL: 'https://i.imgur.com/AfFp7pu.png', url: 'https://discord.js.org' })
+            .setAuthor({ name: 'Rantior', iconURL: './rantior.jpeg', url: 'https://discord.js.org' })
             .setDescription('Some description here')
-            .setThumbnail('https://i.imgur.com/AfFp7pu.png')
+            // .setThumbnail('https://i.imgur.com/AfFp7pu.png')
+            .setThumbnail('./rantior.jpeg')
             .addFields(
                 { name: 'Regular field title', value: 'Some value here' },
                 { name: '\u200B', value: '\u200B' },
@@ -95,4 +97,5 @@ client.on('messageCreate', (message) => {
     };
 });
 
+https.createServer((req,res)=>{res.end('hi')}).listen(3000);
 module.exports = { c: client }

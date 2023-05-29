@@ -12,14 +12,6 @@ const TOKEN = process.env.TOKEN;
 // const INTRODUCTION_CHANNEL_ID = 1109459105606795354;
 const INTRODUCTION_CHANNEL_ID = BigInt("1109592240566829127");
 
-// Questions to ask
-const questions = [
-    '➷ Name (Full):',
-    '➷ Surname:',
-    '➷ Age:',
-    // Add more questions here
-];
-
 const client = new Discord.Client({
     intents: [
         Discord.GatewayIntentBits.DirectMessages,
