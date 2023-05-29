@@ -8,10 +8,10 @@ client.on('ready', () => {
         const embed = new Discord.EmbedBuilder()
             .setColor(0x0099FF).setTitle('Some title')
             .setURL('https://discord.js.org/')
-            .setAuthor({ name: 'Rantior', iconURL: './rantior.jpeg', url: 'https://discord.js.org' })
+            .setAuthor({ name: 'Rantior', iconURL: 'rantior.jpeg', url: 'https://discord.js.org' })
             .setDescription('Some description here')
             // .setThumbnail('https://i.imgur.com/AfFp7pu.png')
-            .setThumbnail('./rantior.jpeg')
+            .setThumbnail('rantior.jpeg')
             .addFields(
                 { name: 'Regular field title', value: 'Some value here' },
                 { name: '\u200B', value: '\u200B' },
