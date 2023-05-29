@@ -20,7 +20,7 @@ const client = new Discord.Client({
         Discord.GatewayIntentBits.GuildMessages,
         Discord.GatewayIntentBits.MessageContent,
     ]
-}).lo;
+});
 
 module.exports = { Discord, client, TOKEN, INTRODUCTION_COMMAND, INTRODUCTION_CHANNEL_ID };
 require('./clientEvents').c.login(TOKEN);
