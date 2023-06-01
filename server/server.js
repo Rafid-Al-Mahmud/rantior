@@ -5,8 +5,9 @@ const ajax = require('../Client/lib/ajax');
 const port = process.env.port || 3000;
 const hostname = process.env.hostname || 'localhost';
 const server = http.createServer((req, res) => {
-    if (req.url === '/') sendFile(req, res, '/index.html');
-    else if (req.url !== '/') sendFile(req, res, req.url);
+    if (req.url === '/') sendFile(req, res, '/client/index.html');
+    else if (req.url === '/logs') sendFile(req, res, '/logs.html');
+    else if (req.url !== '/' && req.url !== '/logs') sendFile(req, res, req.url);
     else sendFile(req, res);
 });
 

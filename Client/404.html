@@ -1,0 +1,27 @@
+<html style='height: 80vh'>
+
+<body style='height: 80vh'>
+    <div class='fc' style='height: 80vh; font-weight: bold; font-family: system-ui, cursive;'>
+        <h1>-----HTTP REQUEST:-----</h1>
+        <h2>Status:</h2><p>"404 not found. ERROR File does not exist."</p>
+        <h2 style='text-decoration: 5px underline lime;'>__dirname:</h2> <p>"${__dirname}"</p>
+        <br>
+        <h2 style='text-decoration: 5px underline lime;'>__dirname.replace:</h2> "${__dirname.replace(/(\\rantior).*/,
+        '$1') + '\\Client'}"
+        <br>
+        <h2 style='text-decoration: 5px underline lime;'>request.method:</h2> "${request.method}"
+        <br>
+        <h2 style='text-decoration: 5px underline lime;'>fileName:</h2> "${fileName}"
+        <br>
+        <h2 style='text-decoration: 5px underline lime;'>filepath:</h2> "${filePath}"
+    </div>
+    <script src='https://rafid-al-mahmud.github.io/cdn/fc.js'></script>
+    <script>
+        for (let i = 0; i < document.querySelectorAll('.fc-container').length; i++) {
+            const element = document.querySelectorAll('.fc-container')[i];
+            element.style.height = '80vh';
+        }
+    </script>
+</body>
+
+</html>
