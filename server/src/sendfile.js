@@ -31,6 +31,7 @@ const sendFile = (request, response, fileName = '/index.html') => {
         response.end(`
         <html style='height: 80vh'>
         <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>404 not found</title>
         <style>
         :root {
